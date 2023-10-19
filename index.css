@@ -215,7 +215,7 @@ a {
 .card > span > h4:first-child {
   display: flex;
   align-items: center;
-  background-color: var(--light-green);
+  background-color: var(--light-red);
   border-radius: 5px;
   color: white;
   padding: 5px;
