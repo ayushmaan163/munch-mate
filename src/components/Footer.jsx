@@ -2,7 +2,11 @@ const Footer = () => {
   return (
     <div className="footer">
       Created By
-      <i className="fa-solid fa-heart"></i>
+      <i class="fa-solid fa-heart fa-flip"></i>
+      <a
+        href="https://www.flaticon.com/free-icons/heart"
+        title="heart icons"
+      ></a>
       <a
         href="https://github.com/ayushmaan163"
         target="_blank"
