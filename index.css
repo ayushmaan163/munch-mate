@@ -231,11 +231,12 @@ a {
 
 /* Restaurant Menu CSS Start */
 .restaurant-menu {
-  margin-top: 80px;
+  margin-top: 0px;
   min-height: 80vh;
   width: auto;
 }
 .restaurant-summary {
+  overflow-y: hidden;
   display: flex;
   height: 200px;
   justify-content: center;
@@ -294,8 +295,8 @@ a {
 }
 
 .menu-items-container {
-  margin-top: 30px;
-  width: 850px;
+  margin-top: 20px;
+  width: 900px;
 }
 .menu-title-wrap {
   padding: 20px;
