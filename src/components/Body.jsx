@@ -1,8 +1,7 @@
-import React from "react";
 import RestaurantCard from "./RestaurantCard";
 import { useEffect, useState } from "react"; /* This is named export */
 import Shimmer from "./Shimmer"; /* This is default export */
-import { swiggy_api_URL, restaurantList } from "./config";
+import { swiggy_api_URL } from "./config";
 import { Link } from "react-router-dom";
 
 // Filter the restaurant data according input type
@@ -66,7 +65,9 @@ const Body = () => {
       setFilteredRestaurants(filteredData);
       setErrorMessage("");
       if (filteredData?.length === 0) {
-        setErrorMessage("No results found for the given restaurant");
+        setErrorMessage(
+          `Sorry, we couldn't find any results for "${searchText}"`
+        );
       }
     } else {
       setErrorMessage("");
