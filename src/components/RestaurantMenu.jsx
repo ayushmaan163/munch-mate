@@ -8,7 +8,7 @@ import {
   RESTAURANT_TYPE_KEY,
 } from "./config";
 import { MenuShimmer } from "./Shimmer";
-import useResMenuData from "../utils/useRestaurant";
+import useResMenuData from "../utils/useResMenuData";
 
 const RestaurantMenu = () => {
   // call useParams and get value of restaurant id using object destructuring
