@@ -10,7 +10,7 @@ import {
 import { MenuShimmer } from "./Shimmer";
 import useResMenuData from "../utils/useResMenuData";
 import { useOnline } from "../utils/useOnline";
-import UserOffline from "./UserOflline";
+import UserOffline from "./UserOffline";
 
 const RestaurantMenu = () => {
   // call useParams and get value of restaurant id using object destructuring
