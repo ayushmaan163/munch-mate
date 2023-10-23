@@ -1044,14 +1044,14 @@ a {
     height: 40px;
   }
   .header .logo {
-    width: 50px;
+    width: 5rem;
   }
   .nav-items > ul {
     margin-right: 10px;
   }
   .nav-items > ul > li {
-    font-size: xx-small;
-    padding: 3px 4px;
+    font-size: 0.563rem;
+    padding: 0.188rem 0.25rem;
   }
   .nav-items > ul > li .logout-btn,
   .nav-items > ul > li .login-btn {
