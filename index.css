@@ -954,6 +954,9 @@ a {
   }
 }
 @media only screen and (max-width: 880px) {
+  .nav-items > ul {
+    margin-right: 20px;
+  }
   .about-container .about-left h1 {
     font-size: 40px;
   }
@@ -990,25 +993,38 @@ a {
   }
 }
 
+@media only screen and (max-width: 590px) {
+  .header .logo {
+    width: 150px;
+  }
+  .nav-items > ul > li {
+    font-size: small;
+  }
+}
+
 @media only screen and (max-width: 470px) {
   .header {
     height: 60px;
   }
   .header .logo {
-    width: 80px;
+    width: 130px;
+  }
+  .nav-items > ul {
+    margin-right: 20px;
   }
   .nav-items > ul > li {
     font-size: small;
+    padding: 5px 7px;
   }
   .nav-items > ul > li .logout-btn,
   .nav-items > ul > li .login-btn {
     font-size: xx-small;
   }
   .search-container {
-    margin: 80px auto 0px;
+    margin: 30px auto 0px;
   }
   .restaurant-menu {
-    margin-top: 60px;
+    /* margin-top: 60px; */
   }
   .restaurant-summary {
     height: 230px;
@@ -1023,22 +1039,26 @@ a {
     max-width: 310px;
   }
 }
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 350px) and (min-width: 280px) {
   .header {
-    height: 50px;
+    height: 40px;
   }
   .header .logo {
-    width: 70px;
+    width: 80px;
+  }
+  .nav-items > ul {
+    margin-right: 10px;
   }
   .nav-items > ul > li {
-    font-size: x-small;
+    font-size: xx-small;
+    padding: 3px 4px;
   }
   .nav-items > ul > li .logout-btn,
   .nav-items > ul > li .login-btn {
     padding: 5px;
   }
   .search-container {
-    margin: 70px auto 0px;
+    margin: 30px auto 0px;
   }
   .restaurant-menu {
     margin-top: 50px;
