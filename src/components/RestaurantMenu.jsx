@@ -9,6 +9,8 @@ import {
 } from "./config";
 import { MenuShimmer } from "./Shimmer";
 import useResMenuData from "../utils/useResMenuData";
+import { useOnline } from "../utils/useOnline";
+import UserOffline from "./UserOflline";
 
 const RestaurantMenu = () => {
   // call useParams and get value of restaurant id using object destructuring
@@ -19,6 +21,13 @@ const RestaurantMenu = () => {
     RESTAURANT_TYPE_KEY,
     MENU_ITEM_TYPE_KEY
   );
+
+  const isOnline = useOnline();
+
+  // if user is not Online then return UserOffline component
+  if (!isOnline) {
+    return <UserOffline />;
+  }
 
   return !restaurant ? (
     <MenuShimmer />
