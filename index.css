@@ -1039,7 +1039,7 @@ a {
     max-width: 310px;
   }
 }
-@media only screen and (max-width: 350px) and (min-width: 280px) {
+@media only screen and (max-width: 350px) and (min-width: 270px) {
   .header {
     height: 40px;
   }
