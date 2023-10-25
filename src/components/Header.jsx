@@ -31,6 +31,11 @@ const Header = () => {
                 Contact
               </Link>
             </li>
+            {/* <li>
+              <Link to="/instamart" className="Link-tag">
+                InstaMart
+              </Link>
+            </li> */}
             <li>Cart</li>
             <li className="log-btn">
               {/* use conditional rendering for login and logout */}
