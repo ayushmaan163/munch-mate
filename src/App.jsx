@@ -44,14 +44,14 @@ const appRouter = createBrowserRouter([
         path: "/restaurant/:resId",
         element: <RestaurantMenu />,
       },
-      {
-        path: "/instamart",
-        element: (
-          <Suspense>
-            <Instamart />
-          </Suspense>
-        ),
-      },
+      // {
+      //   path: "/instamart",
+      //   element: (
+      //     <Suspense>
+      //       <Instamart />
+      //     </Suspense>
+      //   ),
+      // },
     ],
   },
 ]);
