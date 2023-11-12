@@ -1,10 +1,13 @@
 // import React from "react";
 import logo from "/munchmate-logo2.png";
 import { useState } from "react";
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isLoggedin, setIsLoggedin] = useState(true);
+
+  const cartItems = useSelector((store) => store.cart.items);
 
   return (
     <>
@@ -36,7 +39,11 @@ const Header = () => {
                 InstaMart
               </Link>
             </li> */}
-            <li>Cart</li>
+            <li>
+              <Link to="/cart" className="Link-tag">
+                Cart - {cartItems.length}
+              </Link>
+            </li>
             <li className="log-btn">
               {/* use conditional rendering for login and logout */}
               {isLoggedin ? (
