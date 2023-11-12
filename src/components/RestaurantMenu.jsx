@@ -11,6 +11,8 @@ import { MenuShimmer } from "./Shimmer";
 import useResMenuData from "../utils/useResMenuData";
 import { useOnline } from "../utils/useOnline";
 import UserOffline from "./UserOffline";
+import { addItem } from "../utils/cartSlice";
+import { useDispatch } from "react-redux";
 
 const RestaurantMenu = () => {
   // call useParams and get value of restaurant id using object destructuring
@@ -21,6 +23,12 @@ const RestaurantMenu = () => {
     RESTAURANT_TYPE_KEY,
     MENU_ITEM_TYPE_KEY
   );
+
+  const dispatch = useDispatch();
+
+  const handleAddItem = (item) => {
+    dispatch(addItem(item));
+  };
 
   const isOnline = useOnline();
 
@@ -93,7 +101,13 @@ const RestaurantMenu = () => {
                       alt={item?.name}
                     />
                   )}
-                  <button className="add-btn"> ADD +</button>
+                  <button
+                    className="add-btn"
+                    onClick={() => handleAddItem(item)}
+                  >
+                    {" "}
+                    ADD +
+                  </button>
                 </div>
               </div>
             ))}
