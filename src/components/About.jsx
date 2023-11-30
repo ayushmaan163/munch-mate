@@ -6,7 +6,10 @@ const About = () => {
   const [show, setShow] = useState(false);
   return (
     <>
-      <div className="about-container">
+      <div
+        className="about-container"
+        style={{ minHeight: `calc(100vh - 140px)` }}
+      >
         <div className="about-left">
           <h1>
             Welcome to <br /> The world of <br />{" "}
