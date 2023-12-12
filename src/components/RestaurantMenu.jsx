@@ -61,13 +61,17 @@ const RestaurantMenu = () => {
                   : { color: "white" }
               }
             >
-              <i className="fa-solid fa-star"></i>
-              <span>{restaurant?.avgRating}</span>
+              <i
+                class="fa-solid fa-star fa-md"
+                style={{ color: "#fff" }}
+                id="star-icon"
+              ></i>
+              <span className="summary-style">{restaurant?.avgRating}</span>
             </div>
             <div className="restaurant-rating-slash">|</div>
-            <div>{restaurant?.sla?.slaString}</div>
+            <div className="summary-style">{restaurant?.sla?.slaString}</div>
             <div className="restaurant-rating-slash">|</div>
-            <div>{restaurant?.costForTwoMessage}</div>
+            <div className="summary-style">{restaurant?.costForTwoMessage}</div>
           </div>
         </div>
       </div>
