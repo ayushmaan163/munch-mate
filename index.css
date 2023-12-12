@@ -271,7 +271,7 @@ a {
 }
 .restaurant-img {
   width: 250px;
-  height: 170px;
+  /* height: 170px; */
   border-radius: 5px;
 }
 .restaurant-summary-details {
@@ -312,6 +312,10 @@ a {
   gap: 5px;
   background-color: var(--dark-green);
   border-radius: 5px;
+  overflow-y: hidden;
+}
+#star-icon {
+  overflow-y: hidden;
 }
 
 .restaurant-menu-content {
@@ -363,7 +367,7 @@ a {
   color: rgba(40, 44, 63, 0.45);
   width: 60%;
   letter-spacing: -0.3px;
-  font-size: 1rem;
+  font-size: 0.86rem;
 }
 .item-cost {
   margin-top: 4px;
@@ -382,19 +386,20 @@ a {
   overflow: hidden;
 }
 .menu-item-img {
-  height: 100px;
+  /* height: 100px; */
   width: 100px;
   border-radius: 5px;
 }
 .add-btn {
-  background-color: var(--orange);
-  color: var(--text-color);
+  background-color: #e23744;
+  color: white;
   padding: 8px 25px;
   cursor: pointer;
   outline: none;
   border-color: var(--dark-orange);
   margin-top: 10px;
   border-radius: 5px;
+  font-weight: bold;
 }
 
 /* Restaurant Menu End Start */
@@ -578,7 +583,7 @@ a {
   font-size: 70px;
 }
 .about-container .about-left h1 span {
-  background-color: var(--orange);
+  background-color: #e23744;
   padding: 0 10px;
   border-radius: 15px;
   color: var(--white);
@@ -589,7 +594,7 @@ a {
   font-style: italic;
 }
 .about-container .about-left h4 span {
-  color: var(--dark-orange);
+  color: #e23744;
 }
 .about-container .about-right {
   padding-left: 20px;
@@ -985,11 +990,59 @@ a {
   .repo-container {
     width: 80%;
   }
+  .search-container {
+    margin-top: 30px;
+  }
+  .about-container .about-right > img {
+    width: 300px;
+  }
+  .about-container .about-left h1 {
+    font-size: 40px;
+  }
 }
 
 @media only screen and (max-width: 650px) {
-  .about-container .about-right img {
+  .nav-items > ul > li {
+    padding: 7px;
+  }
+  .contact-container .contact-left > img {
     width: 300px;
+  }
+  .about-container .about-right > img {
+    width: 250px;
+  }
+  .about-container .about-left h1 {
+    font-size: 20px;
+  }
+  .about-container .about-left h4 {
+    font-size: 10px;
+  }
+  .restaurant-summary {
+    height: 170px;
+  }
+  .restaurant-img {
+    margin-left: 10px;
+  }
+  .restaurant-title {
+    font-size: 35px;
+  }
+  .restaurant-details {
+    font-size: 14px;
+  }
+  .menu-title-wrap {
+    padding: 10px;
+  }
+  .menu-count {
+    margin-top: 10px;
+  }
+  .menu-item {
+    padding: 15px;
+  }
+  .add-btn {
+    padding: 7px 20px;
+  }
+  .menu-item-img {
+    width: 100px;
   }
 }
 
@@ -999,6 +1052,29 @@ a {
   }
   .nav-items > ul > li {
     font-size: small;
+  }
+  .nav-items > ul {
+    margin-right: 10px;
+  }
+  .search-container .search-btn {
+    padding: 10px 15px;
+  }
+  .search-container .search-input {
+    padding: 10px 15px;
+    width: 50%;
+  }
+  .contact-container .contact-left > img {
+    width: 250px;
+  }
+  .item-title {
+    font-size: 16px;
+  }
+  .menu-item-img {
+    width: 90px;
+  }
+  .add-btn {
+    font-size: smaller;
+    padding: 5px 15px;
   }
 }
 
@@ -1010,11 +1086,11 @@ a {
     width: 130px;
   }
   .nav-items > ul {
-    margin-right: 20px;
+    margin-right: 5px;
   }
   .nav-items > ul > li {
     font-size: small;
-    padding: 5px 7px;
+    padding: 5px;
   }
   .nav-items > ul > li .logout-btn,
   .nav-items > ul > li .login-btn {
@@ -1024,7 +1100,7 @@ a {
     margin: 30px auto 0px;
   }
   .restaurant-summary {
-    height: 230px;
+    height: 150px;
   }
   .about-container {
     height: auto;
@@ -1035,8 +1111,55 @@ a {
   .login-form {
     max-width: 310px;
   }
+  .contact-container {
+    margin: 10px auto 0;
+  }
+  .contact-container .contact-right form input {
+    margin: 7px;
+    padding: 7px;
+  }
+  .menu-item-img {
+    width: 70px;
+  }
+  .add-btn {
+    font-size: smaller;
+    padding: 4px 10px;
+  }
 }
-@media only screen and (max-width: 350px) and (min-width: 270px) {
+@media only screen and (max-width: 414px) {
+  .nav-items > ul > li {
+    font-size: x-small;
+    padding: 2px 4px;
+  }
+  .search-container {
+    margin-top: 20px;
+  }
+  .search-container .search-input::placeholder {
+    font-size: 10px;
+  }
+  .summary-style {
+    font-size: 11px;
+  }
+  .restaurant-title {
+    font-size: 25px;
+  }
+  .restaurant-tags {
+    font-size: 14px;
+  }
+  .menu-title-wrap {
+    padding: 0 10px 10px;
+  }
+  .menu-count {
+    margin-top: 5px;
+  }
+  .item-title {
+    font-size: 15px;
+  }
+  .item-cost {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 350px) and (min-width: 280px) {
   .header {
     height: 40px;
   }
@@ -1055,7 +1178,13 @@ a {
     padding: 5px;
   }
   .search-container {
-    margin: 30px auto 0px;
+    margin: 15px auto 0px;
+  }
+  .search-container .search-btn {
+    padding: 6px 9px;
+  }
+  .search-container .search-input {
+    padding: 6px 9px;
   }
   .restaurant-menu {
     margin-top: 50px;
@@ -1065,5 +1194,29 @@ a {
   }
   .login-form {
     max-width: 280px;
+  }
+  .restaurant-title {
+    font-size: 18px;
+  }
+  .restaurant-tags {
+    font-size: 12px;
+  }
+  .summary-style {
+    font-size: 10px;
+  }
+  .restaurant-rating {
+    padding: 4px 6px;
+  }
+  .menu-title {
+    font-size: 18px;
+  }
+  .menu-count {
+    font-size: 15px;
+  }
+  .item-desc {
+    font-size: 11px;
+  }
+  .add-btn {
+    font-size: 10px;
   }
 }
